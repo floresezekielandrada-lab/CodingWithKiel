@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiel Banayad - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Kiel</div>
+        <ul>
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#contact" class="nav-link">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <a href="cv.html" class="btn-download-cv">Download CV</a>
+                    <h1>Hi, I'm <span class="highlight">Ezekiel Andrada Flores</span></h1>
+                    <p> A Full Stack Developer, based in the Philippines.</p>
+                    <div class="hero-cta">
+                        <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Get In Touch</button>
+                        <button class="btn btn-secondary" onclick="document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' })">View My Work</button>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.6.07-.6 1 .07 1.52 1.03 1.52 1.03.88 1.52 2.33 1.08 2.9.82.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.93 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.578 9.578 0 0112 6.8c.85.004 1.71.114 2.52.336 1.9-1.29 2.73-1.02 2.73-1.02.56 1.38.21 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.83-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48C19.14 20.16 22 16.42 22 12 22 6.48 17.52 2 12 2z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" title="Email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                <path d="m22 7-10 5L2 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-frame">
+                          <div class="image-placeholder">
+                            <img src="700870168_988888100346518_3389696231346449766_n.jpg" alt="Kiel Banayad">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="section-content">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>I'm a developer with a passion for solving complex problems through code. With expertise in both frontend and backend technologies, I create seamless digital experiences that blend aesthetics with functionality.</p>
+                        <p>I believe in clean code, continuous learning, and building products that users love. My approach combines technical excellence with creative problem-solving to deliver solutions that exceed expectations.</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--accent-primary); margin-bottom: 20px; font-size: 18px;">Core Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <h4>Frontend</h4>
+                                <p>React, TypeScript, CSS, JavaScript, GSAP</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>Backend</h4>
+                                <p>Node.js, Java, C#, Python</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>Tools</h4>
+                                <p>Git, Netbeans, VS Code, Eclipse</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>Other</h4>
+                                <p>REST APIs, GraphQL, Web Design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery" id="gallery">
+            <div class="section-content">
+                <h2 class="section-title">My Work</h2>
+                <div class="carousel-container">
+                    <button class="carousel-btn carousel-btn-left" id="prevBtn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    
+                    <div class="carousel-wrapper">
+                        <div class="carousel" id="carousel">
+                            <div class="carousel-item">
+                                <div class="carousel-image">Project 1</div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-image">Project 2</div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-image">Project 3</div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-image">Project 4</div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-image">Project 5</div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-image">Project 6</div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-image">Project 7</div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-image">Project 8</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-btn carousel-btn-right" id="nextBtn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education" id="education">
+            <div class="section-content">
+                <h2 class="section-title">Education</h2>
+                <div class="education-timeline">
+                    <div class="education-item">
+                        <h3>Junior High School</h3>
+                        <div class="education-year">2024-2025</div>
+                        <p>San Isidro National High School</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Senior High School</h3>
+                        <div class="education-year">2026-2027</div>
+                        <p>Card-MRI Development Institute Inc.</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Bachelor Science in Information Technology </h3>
+                        <div class="education-year"></div>
+                        <p>Pangasinan State University, Urdaneta City Campus </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="section-content">
+                <h2 class="section-title">Get In Touch</h2>
+                <p style="color: var(--text-secondary); margin-top: 20px; font-size: 16px; max-width: 600px;">I'm always interested in hearing about new projects and opportunities. Feel free to reach out!</p>
+                
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <h4>📧 Email</h4>
+                            <p><a href="mailto:kiel@example.com">floresezekielandrada@gmail.com</a></p>
+                        </div>
+                        <div class="contact-card">
+                            <h4>💬 Let's Connect</h4>
+                            <p><a href="#">GitHub</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.541098881491!2d121.00522347346193!3d14.599512186306117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7f5c5c5c5c5%3A0x1234567890abcdef!2sSan%20Urdaneta%2C%20Pangasinan!5e0!3m2!1sen!2sph!4v1234567890123" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Kiel Banayad. All rights reserved. Built with HTML, CSS, JavaScript & TypeScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
